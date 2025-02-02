@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagalakshmi Portfolio - Home</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo">NA</div>
+        </div>
+        <div class="nav-icons">
+            <a href="{{ url_for('home') }}" class="nav-icon active"><i class="fas fa-home"></i></a>
+            <a href="{{ url_for('about') }}" class="nav-icon"><i class="fas fa-user"></i></a>
+            <a href="{{ url_for('education') }}" class="nav-icon"><i class="fas fa-graduation-cap"></i></a>
+            <a href="{{ url_for('skills') }}" class="nav-icon"><i class="fas fa-code"></i></a>
+            <a href="{{ url_for('projects') }}" class="nav-icon"><i class="fas fa-project-diagram"></i></a>
+            <a href="{{ url_for('contact') }}" class="nav-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Hello, I'm Nagalakshmi Aritikatla</h1>
+            <h2>I AM A <span class="highlight">Student</span></h2>
+            <p>Passionate web developer crafting beautiful and functional digital experiences.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nagalakshmi-aritikatla-654154294/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/NagalakshmiAritikatla" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="static/image copy.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

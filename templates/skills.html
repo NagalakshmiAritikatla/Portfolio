@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagalakshmi Portfolio - Skills</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo">NA</div>
+        </div>
+        <div class="nav-icons">
+            <a href="{{ url_for('home') }}" class="nav-icon"><i class="fas fa-home"></i></a>
+            <a href="{{ url_for('about') }}" class="nav-icon"><i class="fas fa-user"></i></a>
+            <a href="{{ url_for('education') }}" class="nav-icon"><i class="fas fa-graduation-cap"></i></a>
+            <a href="{{ url_for('skills') }}" class="nav-icon active"><i class="fas fa-code"></i></a>
+            <a href="{{ url_for('projects') }}" class="nav-icon"><i class="fas fa-project-diagram"></i></a>
+            <a href="{{ url_for('contact') }}" class="nav-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Tableau</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

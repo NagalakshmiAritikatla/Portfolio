@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagalakshmi Portfolio - About</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo">NA</div>
+        </div>
+        <div class="nav-icons">
+            <a href="{{ url_for('home') }}" class="nav-icon"><i class="fas fa-home"></i></a>
+            <a href="{{ url_for('about') }}" class="nav-icon active"><i class="fas fa-user"></i></a>
+            <a href="{{ url_for('education') }}" class="nav-icon"><i class="fas fa-graduation-cap"></i></a>
+            <a href="{{ url_for('skills') }}" class="nav-icon"><i class="fas fa-code"></i></a>
+            <a href="{{ url_for('projects') }}" class="nav-icon"><i class="fas fa-project-diagram"></i></a>
+            <a href="{{ url_for('contact') }}" class="nav-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="static/image copy.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <h3>Hi, I'm Nagalakshmi Aritikatla</h3>
+                <p>Currently pursuing BSc in Data Science, combining strong analytical skills with hands-on development
+                    expertise.
+                    Experienced in building interactive web applications and implementing data-driven solutions.</p>
+                <p>Committed to continuous learning and staying current with emerging technologies.
+                    Active contributor to developer communities and open-source projects.</p>
+                <div class="about-buttons">
+                    <button class="view-btn" onclick="openModal('resumeModal')">
+                        <i class="fas fa-file-alt"></i> View Resume
+                    </button>
+                    <button class="view-btn" onclick="openModal('certificateModal')">
+                        <i class="fas fa-certificate"></i> View Certificates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('resumeModal')">&times;</span>
+            <h2>My Resume</h2>
+            <div class="resume-container">
+                <iframe src="static/Nagalakshmi_resume.pdf" type="application/pdf"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('certificateModal')">&times;</span>
+            <h2>My Certificates</h2>
+            <div class="certificates-container">
+                <div class="certificate">
+                    <div class="certificate-pdf">
+                        <iframe src="static/DelftX AIIP2x Certificate _ edX.pdf" type="application/pdf"></iframe>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>AI in Practice: Applying AI</h3>
+                    </div>
+                </div>
+                <!-- New Certificate Section -->
+                <div class="certificate">
+                    <div class="certificate-pdf">
+                        <iframe src="static/immmmm.pdf" type="application/pdf"></iframe>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Interviwe skills</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

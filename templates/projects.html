@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagalakshmi Portfolio - Projects</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo">NA</div>
+        </div>
+        <div class="nav-icons">
+            <a href="{{ url_for('home') }}" class="nav-icon"><i class="fas fa-home"></i></a>
+            <a href="{{ url_for('about') }}" class="nav-icon"><i class="fas fa-user"></i></a>
+            <a href="{{ url_for('education') }}" class="nav-icon"><i class="fas fa-graduation-cap"></i></a>
+            <a href="{{ url_for('skills') }}" class="nav-icon"><i class="fas fa-code"></i></a>
+            <a href="{{ url_for('projects') }}" class="nav-icon active"><i class="fas fa-project-diagram"></i></a>
+            <a href="{{ url_for('contact') }}" class="nav-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/image.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://nagalakshmiaritikatla.github.io/Naga_chatbot/" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Journey Jot Bot</h3>
+                    <p>A smart chatbot for retrieving train fare information quickly and accurately.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/movie_buzz.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://vardhan411205.github.io/movie_ticket/" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Movie Buzz</h3>
+                    <p>Interactive movie information platform with modern features:
+                        <br>
+                        • Real-time movie search
+                        <br>
+                        • Rating and reviews display
+                        <br>
+                        • Responsive movie cards
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/calc.png" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://nagalakshmiaritikatla.github.io/calc/" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Mathematical Calculator</h3>
+                    <p>A simple calculator for basic arithmetic operations.
+                        <br>
+                        • Addition
+                        <br>
+                        • Subtraction
+                        <br>
+                        • Multiplication
+                        <br>
+                        • Division
+                        <br>
+                        • Keyboard support
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

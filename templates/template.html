@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagalakshmi Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo">NA</div>
+        </div>
+        <div class="nav-icons">
+            <a href="#home" class="nav-icon active"><i class="fas fa-home"></i></a>
+            <a href="#about" class="nav-icon"><i class="fas fa-user"></i></a>
+            <a href="#education" class="nav-icon"><i class="fas fa-graduation-cap"></i></a>
+            <a href="#skills" class="nav-icon"><i class="fas fa-code"></i></a>
+            <a href="#projects" class="nav-icon"><i class="fas fa-project-diagram"></i></a>
+            <a href="#contact" class="nav-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Hello, I'm Nagalakshmi Aritikatla</h1>
+            <h2>I AM A <span class="highlight">Student</span></h2>
+            <p>Passionate web developer crafting beautiful and functional digital experiences.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nagalakshmi-aritikatla-654154294/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/NagalakshmiAritikatla" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="static/image copy.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="static/image copy.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <h3>Hi, I'm Nagalakshmi Aritikatla</h3>
+                <p>Currently pursuing BSc in Data Science, combining strong analytical skills with hands-on development expertise.
+                    Experienced in building interactive web applications and implementing data-driven solutions.</p>
+                <p>Committed to continuous learning and staying current with emerging technologies.
+                    Active contributor to developer communities and open-source projects.</p>
+                <div class="about-buttons">
+                    <button class="view-btn" onclick="openModal('resumeModal')">
+                        <i class="fas fa-file-alt"></i> View Resume
+                    </button>
+                    <button class="view-btn" onclick="openModal('certificateModal')">
+                        <i class="fas fa-certificate"></i> View Certificates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>BSC[Data Science]</h3>
+                    <p class="timeline-date">2022 - 2025</p>
+                    <p>85%</p><br>
+                    <p>KBN college</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Intermediate[MEC]</h3>
+                    <p class="timeline-date">2020 - 2022</p>
+                    <p>75%</p><br>
+                    <p>KBN college</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Secondary School Education</h3>
+                    <p class="timeline-date">2018 - 2019</p>
+                    <p>86.33</p><br>
+                    <p>STR HIGH SCHOOL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Tableau</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/image.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://nagalakshmiaritikatla.github.io/Naga_chatbot/" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Journey Jot Bot</h3>
+                    <p>A smart chatbot for retrieving train fare information quickly and accurately.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/movie_buzz.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://vardhan411205.github.io/movie_ticket/" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Movie Buzz</h3>
+                    <p>Interactive movie information platform with modern features:
+                        <br>
+                        • Real-time movie search
+                        <br>
+                        • Rating and reviews display
+                        <br>
+                        • Responsive movie cards
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="static/calc.png" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://nagalakshmiaritikatla.github.io/calc/" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Mathematical Calculator</h3>
+                    <p>A simple calculator for basic arithmetic operations.
+                        <br>
+                        • Addition
+                        <br>
+                        • Subtraction
+                        <br>
+                        • Multiplication
+                        <br>
+                        • Division
+                        <br>
+                        • Keyboard support
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-content">
+                <div id="message-status" class="message-status"></div>
+                <form id="contact-form" class="contact-form" method="POST" action="{{ url_for('send_message') }}">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('resumeModal')">&times;</span>
+            <h2>My Resume</h2>
+            <div class="resume-container">
+                <iframe src="static/Nagalakshmi_resume.pdf" type="application/pdf"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('certificateModal')">&times;</span>
+            <h2>My Certificates</h2>
+            <div class="certificates-container">
+                <div class="certificate">
+                    <div class="certificate-pdf">
+                        <iframe src="static/DelftX AIIP2x Certificate _ edX.pdf" type="application/pdf"></iframe>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>AI in Practice: Applying AI</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/nagalakshmi-aritikatla-654154294/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/NagalakshmiAritikatla" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>© 2024 Nagalakshmi Aritikatla. All rights reserved.</p>
+                <p>Email: aritikatlanagalakshmi@gmail.com</p>
+                <p>Phone: +91 9182786534</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Modal functions
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+        if (event.target.className === 'modal') {
+            event.target.style.display = "none";
+        }
+    }
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Active navigation indicator
+    window.addEventListener('scroll', function() {
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('.nav-icon');
+        
+        sections.forEach((section, index) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 150 && rect.bottom >= 150) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                navLinks[index].classList.add('active');
+            }
+        });
+    });
+
+    // Contact form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const statusDiv = document.getElementById('message-status');
+        const submitBtn = this.querySelector('button[type="submit"]');
+        
+        // Disable submit button while sending
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        
+        fetch('{{ url_for("send_message") }}', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                statusDiv.innerHTML = '<div class="success-message">' + data.message + '</div>';
+                this.reset();
+            } else {
+                statusDiv.innerHTML = '<div class="error-message">' + data.message + '</div>';
+            }
+        })
+        .catch(error => {
+            statusDiv.innerHTML = '<div class="error-message">Error sending message. Please try again.</div>';
+            console.error('Error:', error);
+        })
+        .finally(() => {
+            // Re-enable submit button
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+        });
+    });
+    </script>
+</body>
+</html>
