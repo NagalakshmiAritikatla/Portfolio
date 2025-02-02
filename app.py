@@ -51,14 +51,14 @@ def send_message():
                 "message": "Please fill in all required fields."
             })
 
-        # Create message
-        msg = MIMEMultipart()
-        msg['From'] = SENDER_EMAIL
-        msg['To'] = SENDER_EMAIL  # Send to yourself
-        msg['Subject'] = f"Portfolio Contact: {subject}"
+        # Create message for portfolio owner
+        msg_to_owner = MIMEMultipart()
+        msg_to_owner['From'] = SENDER_EMAIL
+        msg_to_owner['To'] = SENDER_EMAIL
+        msg_to_owner['Subject'] = f"Portfolio Contact: {subject}"
 
-        # Email body
-        body = f"""
+        # Email body for portfolio owner
+        owner_body = f"""
         New message from your portfolio website:
         
         Name: {name}
@@ -66,14 +66,38 @@ def send_message():
         Subject: {subject}
         Message: {message}
         """
+        msg_to_owner.attach(MIMEText(owner_body, 'plain'))
 
-        msg.attach(MIMEText(body, 'plain'))
+        # Create confirmation message for sender
+        msg_to_sender = MIMEMultipart()
+        msg_to_sender['From'] = SENDER_EMAIL
+        msg_to_sender['To'] = email
+        msg_to_sender['Subject'] = "Thank you for contacting Nagalakshmi Aritikatla"
 
-        # Send email
+        # Email body for sender
+        sender_body = f"""
+        Dear {name},
+
+        Thank you for contacting me through my portfolio website. I have received your message and will get back to you soon.
+
+        Here's a copy of your message:
+        
+        Subject: {subject}
+        Message: {message}
+
+        Best regards,
+        Nagalakshmi Aritikatla
+        """
+        msg_to_sender.attach(MIMEText(sender_body, 'plain'))
+
+        # Send emails
         with smtplib.SMTP('smtp.gmail.com', 587) as server:
             server.starttls()
             server.login(SENDER_EMAIL, SENDER_PASSWORD)
-            server.send_message(msg)
+            # Send to portfolio owner
+            server.send_message(msg_to_owner)
+            # Send confirmation to sender
+            server.send_message(msg_to_sender)
 
         return jsonify({
             "status": "success",
